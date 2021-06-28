@@ -1,0 +1,197 @@
+﻿<Window x:Class="ArabianNightsTracker.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArabianNightsTracker.Views"
+        mc:Ignorable="d"
+        Title="MainView" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/><!--Left mouseover margin-->
+            <ColumnDefinition Width="*"/><!--Actions-->
+            <ColumnDefinition Width="200"/><!--Character-->
+            <ColumnDefinition Width="20"/><!--Right mouseover margin-->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/><!--Actions/Character-->
+            <RowDefinition Height="40"/><!--Status mouseover-->
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">A</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Grovel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Rob</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Converse</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Court</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Abduct</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hide</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">B</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Grovel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Rob</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Bargain</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Court</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Trick</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hire</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Grid.Row="0">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">C</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Beat</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Enrich</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Rob</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Question</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Follow</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hire</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="3" Grid.Row="0">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">D</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Punish</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Rob</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Question</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Abduct</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Buy (Slave)</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hire</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="4" Grid.Row="0">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">E</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Examine</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Take</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Use</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Open</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Sneak</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hire Help</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Enter</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">F</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Pray</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Wait</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Cry Out</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Drink</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Examine</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Travel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hide</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="1">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">G</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Pray for Guidance</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Wait for Help</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Cry Out for Help</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Examine Surroundings</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Set Forth</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hide Safely</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Grid.Row="1">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">H</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Grovel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Converse</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Trick</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Bargain</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Flee</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="3" Grid.Row="1">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">I</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Honor</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Rob</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Follow</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Question</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Pray</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="4" Grid.Row="1">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">J</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Pray</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Study</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Capture</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Follow</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Seek Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hide</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="2">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">K</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Grovel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Honor</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Bribe</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Converse</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Trick</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attempt to Escape</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Wait</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="2">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">L</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Rob</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Barter</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Honor</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Court</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Abduct</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hire</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Grid.Row="2">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">M</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Grovel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Bargain</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Trick</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="3" Grid.Row="2">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">N</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Pray</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Bargain</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Examine</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Enter</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Seek Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="4" Grid.Row="2">
+                <Label FontSize="22" Padding="10,0,10,0" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1">O</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Grovel</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Aid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Avoid</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Bargain</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Attack</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Trick</Label>
+                <Label HorizontalAlignment="Center" Padding="0,0,0,0">Hire</Label>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
